@@ -166,7 +166,7 @@
       <li><strong>Google Sign-In:</strong> If you use Google Authentication, we collect your display name and email address to authenticate your profile.</li>
       <li><strong>Student Profile (Optional):</strong> You may optionally provide your phone number, college name, and district.</li>
       <li><strong>Communication Consent:</strong> If you check the optional consent box, we may send educational notices or course information via WhatsApp. You can revoke this anytime.</li>
-      <li><strong>Firebase Cloud Messaging (FCM):</strong> Anonymous device tokens are used solely for match notifications in ICT Battle and study reminders.</li>
+      <li><strong>Firebase Cloud Messaging (FCM):</strong> Device tokens are used for opted-in ICT Battle invitations. Study reminders are scheduled on your phone.</li>
     </ul>
 
     <div class="highlight-box">
@@ -175,7 +175,7 @@
 
     <h2>3. Third-Party Infrastructure</h2>
     <p>
-      All cloud features use Google Firebase infrastructure:
+      Google Firebase handles sign-in, profiles and push delivery. Live ICT Battle rooms run on a Neurobyte server.
     </p>
     <ul>
       <li><strong>Google Play Services</strong> — Application distribution and security verification.</li>
@@ -193,7 +193,7 @@
     <div class="deletion-box">
       <h3 style="color: #991B1B; margin-top: 0;">How to Delete Your Account and Data:</h3>
       <ol style="margin-bottom: 0;">
-        <li><strong>In-App Deletion:</strong> Open the HSC ICT+ app &rarr; Go to <em>Student Profile</em> &rarr; Tap <strong>"প্রোফাইল মুছে ফেলুন" (Delete Account)</strong> &rarr; Confirm. All your Firebase records and profile data are wiped immediately.</li>
+        <li><strong>In-App Deletion:</strong> Open the HSC ICT+ app &rarr; Go to <em>Student Profile</em> &rarr; Tap <strong>"প্রোফাইল মুছে ফেলুন" (Delete Account)</strong> &rarr; Confirm. Confirm your Google account again. The app reports success after deleting your account and saved student profile.</li>
         <li><strong>Web-Based Deletion Request:</strong> If you have uninstalled the app, visit our <a href="delete-account.html">Data Deletion Request Page</a> or send an email to <a href="mailto:support@neurobyteit.com">support@neurobyteit.com</a> with the subject <em>"HSC ICT+ Account Deletion"</em>. Your records will be deleted within 48 to 72 hours.</li>
       </ol>
     </div>
