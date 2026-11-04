@@ -34,6 +34,28 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
       border: 1px solid var(--border);
     }
+    .nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+      border-bottom: 2px solid var(--border);
+    }
+    .nav-item {
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      color: #64748B;
+      background: #F1F5F9;
+      transition: all 0.2s;
+    }
+    .nav-item:hover, .nav-item.active {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
     .header {
       border-bottom: 2px solid var(--border);
       padding-bottom: 24px;
@@ -116,6 +138,11 @@
 </head>
 <body>
   <div class="container">
+    <div class="nav-bar">
+      <a href="index.html" class="nav-item active">Privacy Policy</a>
+      <a href="terms.html" class="nav-item">Terms & Conditions</a>
+      <a href="delete-account.html" class="nav-item">Account Deletion</a>
+    </div>
     <div class="header">
       <span class="badge">Official Policy</span>
       <h1>Privacy Policy for HSC ICT+</h1>
@@ -192,7 +219,7 @@
     </ul>
 
     <div class="footer">
-      &copy; 2026 Neurobyte. All rights reserved. • <a href="delete-account.html">Request Account Deletion</a>
+      &copy; 2026 Neurobyte. All rights reserved. • <a href="terms.html">Terms & Conditions</a> • <a href="delete-account.html">Request Account Deletion</a>
     </div>
   </div>
 </body>
