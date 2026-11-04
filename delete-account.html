@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account and Data Deletion — HSC ICT+</title>
+  <style>
+    :root {
+      --primary: #0D5554;
+      --secondary: #4BBC78;
+      --text: #1E293B;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    .header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .badge {
+      display: inline-block;
+      background: #FEF2F2;
+      color: #DC2626;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    h1 {
+      color: var(--primary);
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    .meta {
+      font-size: 14px;
+      color: #64748B;
+    }
+    h2 {
+      color: var(--primary);
+      font-size: 18px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+    p, ul, ol {
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .step-box {
+      background: #F8FAFC;
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 16px 0;
+    }
+    .step-title {
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .btn-mail {
+      display: inline-block;
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    .btn-mail:hover {
+      background: #083c3b;
+    }
+    a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 14px;
+      color: #64748B;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="badge">Google Play Data Safety Compliance</span>
+      <h1>HSC ICT+ Account & Data Deletion Request</h1>
+      <div class="meta">
+        <strong>App Name:</strong> HSC ICT+ (com.neurobyte.hsc_ict_plus)<br>
+        <strong>Developer:</strong> Neurobyte<br>
+        <strong>Policy URL:</strong> <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+
+    <p>
+      In accordance with Google Play's <strong>Account and Data Deletion Policy</strong>, users of <strong>HSC ICT+</strong> have the full right to delete their student profile, account credentials, and all associated personal data stored on our servers.
+    </p>
+
+    <h2>Option 1: Instant In-App Deletion (Recommended)</h2>
+    <div class="step-box">
+      <div class="step-title">If you still have the app installed:</div>
+      <ol>
+        <li>Open the <strong>HSC ICT+</strong> mobile app on your Android device.</li>
+        <li>From the Dashboard or Drawer menu, open <strong>Student Profile (শিক্ষার্থী প্রোফাইল)</strong>.</li>
+        <li>Scroll to the bottom and tap <strong>"প্রোফাইল মুছে ফেলুন" (Delete Account & Data)</strong>.</li>
+        <li>Confirm the deletion modal.</li>
+      </ol>
+      <p style="margin-bottom: 0; color: #047857; font-weight: 600;">
+        &check; Your profile document in Cloud Firestore, notification registration, and Firebase Authentication account are deleted immediately.
+      </p>
+    </div>
+
+    <h2>Option 2: Web-Based Deletion Request (Without Installing App)</h2>
+    <div class="step-box">
+      <div class="step-title">If you have uninstalled the app or lost device access:</div>
+      <p>
+        You can request complete deletion of your account and personal data by sending an email from the Google email address used to log into the app:
+      </p>
+      <ul>
+        <li><strong>Recipient:</strong> <a href="mailto:support@neurobyteit.com">support@neurobyteit.com</a> or <a href="mailto:saiful@neurobyteit.com">saiful@neurobyteit.com</a></li>
+        <li><strong>Subject:</strong> HSC ICT+ Data Deletion Request</li>
+        <li><strong>Information to provide:</strong> Your registered Google Account email address.</li>
+      </ul>
+      <a class="btn-mail" href="mailto:support@neurobyteit.com?subject=HSC%20ICT%2B%20Data%20Deletion%20Request&body=Please%20delete%20all%20my%20account%20and%20profile%20data%20associated%20with%20this%20email%20address%20from%20the%20HSC%20ICT%2B%20app%20servers.">
+        Send Deletion Request Email
+      </a>
+      <p style="margin-top: 14px; margin-bottom: 0; font-size: 14px; color: #64748B;">
+        <em>Our support team will process your request and permanently remove all data from Firebase within 48 to 72 hours. You will receive a confirmation email upon completion.</em>
+      </p>
+    </div>
+
+    <h2>What Data Is Deleted?</h2>
+    <ul>
+      <li>Your Firebase Authentication User Record (email, UID, sign-in tokens).</li>
+      <li>Your Student Profile record in Cloud Firestore (name, phone number, college, district, marketing preferences).</li>
+      <li>Your Push Notification Token on Firebase Cloud Messaging.</li>
+      <li>Your 1v1 match history records.</li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2026 Neurobyte. All rights reserved. • <a href="privacy.html">Back to Privacy Policy</a>
+    </div>
+  </div>
+</body>
+</html>
