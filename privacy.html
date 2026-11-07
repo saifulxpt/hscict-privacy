@@ -159,9 +159,9 @@
     <h2>2. Information we handle and why</h2>
     <ul>
       <li><strong>Google sign-in:</strong> Firebase Authentication identifies your app account using your Google account identifier and provides your name, email and Google profile photo, when available. The photo can appear in your profile and in an ICT Battle room you join.</li>
-      <li><strong>Student profile:</strong> After sign-in, we ask for your name, phone number, college and district to set up your profile. The phone number is for account support and recovery verification. We do not use it for marketing. An optional custom photo is compressed on your device and saved with your profile in Cloud Firestore. Profile information is also cached on your device so it can load offline.</li>
-      <li><strong>ICT Battle:</strong> When you create or join a room, our server uses your display name, available Google photo link, room and session details, and answers to run the match. The server temporarily uses the connection IP to limit repeated room requests. Other players in the room can see your display name and available photo. Recent match history is saved on your device.</li>
-      <li><strong>Question reports:</strong> When you send feedback on a question, the app can store the question, reason, comment and report time locally and send them to Cloud Firestore for review. If you are signed in, the report can include your account ID, name and email. Reports queued offline may be sent later.</li>
+      <li><strong>Student profile:</strong> After sign-in, we ask for your name, phone number, college and district to set up your profile. The phone number is for account support and recovery verification. We do not use it for marketing. An optional custom photo is compressed on your device and saved with your profile in Cloud Firestore. Profile information is also cached on your device so it can load offline. A copy of your name, phone number, college, district, email and whether you added a photo is also kept on the Neurobyte server so our team can support students; it is removed when you delete your account. If our server is offline at that moment, your Firebase account is still deleted and the app removes the server copy the next time it can reach our server.</li>
+      <li><strong>ICT Battle:</strong> When you create or join a room, our server uses your display name, your custom profile photo or available Google photo link, room and session details, and answers to run the match. The server temporarily uses the connection IP to limit repeated room requests. Other players in the room can see your display name and photo. A custom photo is kept in server memory only while the room exists, for up to 15 minutes, and is not stored on disk. Recent match history is saved on your device.</li>
+      <li><strong>Question reports:</strong> When you send feedback on a question, the app can store the question, reason, comment and report time locally and send them to the Neurobyte server for review by our team. If you are signed in, the app sends a sign-in token that the server checks, and the report stores your account ID, name and email. Reports queued offline may be sent later.</li>
       <li><strong>Notifications:</strong> Firebase Cloud Messaging uses an app installation token to deliver push notices. Notification permission is managed in Android settings. Study reminders are scheduled locally on your phone. Older app versions may have a linked Battle invitation registration.</li>
       <li><strong>Local study data:</strong> Study notes, practice activity and app preferences can be stored on your device.</li>
     </ul>
@@ -191,8 +191,7 @@
     </p>
     <ul>
       <li><strong>Organization:</strong> Neurobyte</li>
-      <li><strong>Email:</strong> <a href="mailto:support@neurobyteit.com">support@neurobyteit.com</a> / <a href="mailto:saiful@neurobyteit.com">saiful@neurobyteit.com</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/saifulxpt/HSCICT" target="_blank" rel="noopener">github.com/saifulxpt/HSCICT</a></li>
+      <li><strong>Email:</strong> <a href="mailto:hsc@neurobyteit.com">hsc@neurobyteit.com</a></li>
     </ul>
 
     <div class="footer">
