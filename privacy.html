@@ -139,7 +139,7 @@
 <body>
   <div class="container">
     <div class="nav-bar">
-      <a href="index.html" class="nav-item active">Privacy Policy</a>
+      <a href="privacy.html" class="nav-item active">Privacy Policy</a>
       <a href="terms.html" class="nav-item">Terms & Conditions</a>
       <a href="delete-account.html" class="nav-item">Account Deletion</a>
     </div>
@@ -149,53 +149,31 @@
       <div class="meta">
         <strong>Application:</strong> HSC ICT+ (com.neurobyte.hsc_ict_plus)<br>
         <strong>Developer:</strong> Neurobyte (neurobyteit.com)<br>
-        <strong>Last Updated:</strong> November 4, 2026
+        <strong>Last Updated:</strong> November 7, 2026
       </div>
     </div>
 
-    <h2>1. Introduction</h2>
-    <p>
-      Neurobyte develops <strong>HSC ICT+</strong> to provide Bangladeshi Higher Secondary Certificate (HSC) students with interactive ICT learning, MCQ practice, board CQ suggestions, logic gate visualizers, and real-time 1v1 challenges. We are committed to safeguarding student privacy and maintaining transparency in data practices.
-    </p>
+    <h2>1. About this policy</h2>
+    <p>Neurobyte operates HSC ICT+, a study app for Bangladeshi HSC students. Core study tools, books and practice are available without creating an account.</p>
 
-    <h2>2. Data Collection & Usage</h2>
-    <p>
-      Students can use almost all core study materials in HSC ICT+ <strong>without logging in or providing personal data</strong>. We only collect data when optional cloud-powered features are used:
-    </p>
+    <h2>2. Information we handle and why</h2>
     <ul>
-      <li><strong>Google Sign-In:</strong> If you use Google Authentication, we collect your display name and email address to authenticate your profile.</li>
-      <li><strong>Student Profile:</strong> If you choose to sign in, your name, phone number, college and district are required to complete your student profile.</li>
-      <li><strong>Firebase Cloud Messaging (FCM):</strong> Device tokens are used for opted-in ICT Battle invitations. Study reminders are scheduled on your phone.</li>
+      <li><strong>Google sign-in:</strong> Firebase Authentication identifies your app account using your Google account identifier and provides your name, email and Google profile photo, when available. The photo can appear in your profile and in an ICT Battle room you join.</li>
+      <li><strong>Student profile:</strong> After sign-in, we ask for your name, phone number, college and district to set up your profile. The phone number is for account support and recovery verification. We do not use it for marketing. An optional custom photo is compressed on your device and saved with your profile in Cloud Firestore. Profile information is also cached on your device so it can load offline.</li>
+      <li><strong>ICT Battle:</strong> When you create or join a room, our server uses your display name, available Google photo link, room and session details, and answers to run the match. The server temporarily uses the connection IP to limit repeated room requests. Other players in the room can see your display name and available photo. Recent match history is saved on your device.</li>
+      <li><strong>Question reports:</strong> When you send feedback on a question, the app can store the question, reason, comment and report time locally and send them to Cloud Firestore for review. If you are signed in, the report can include your account ID, name and email. Reports queued offline may be sent later.</li>
+      <li><strong>Notifications:</strong> Firebase Cloud Messaging uses an app installation token to deliver push notices. Notification permission is managed in Android settings. Study reminders are scheduled locally on your phone. Older app versions may have a linked Battle invitation registration.</li>
+      <li><strong>Local study data:</strong> Study notes, practice activity and app preferences can be stored on your device.</li>
     </ul>
 
-    <div class="highlight-box">
-      <strong>Zero Advertising Policy:</strong> HSC ICT+ does not track your device with Google Advertising ID (AD_ID). We do not include any third-party ad networks, trackers, or commercial data brokers.
-    </div>
+    <h2>3. Service providers and external links</h2>
+    <p>We use Google Sign-In, Firebase Authentication, Cloud Firestore and Firebase Cloud Messaging to provide the features above. Neurobyte operates the live Battle server. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> for information about its services.</p>
+    <p>HSC ICT+ can show announcements about Neurobyte classes. Tapping the class contact button opens WhatsApp with a draft message for you to review and send. WhatsApp handles any message you choose to send under its own privacy policy. HSC ICT+ does not use a third-party ad network or the Android Advertising ID for these announcements.</p>
 
-    <h2>3. Third-Party Infrastructure</h2>
-    <p>
-      Google Firebase handles sign-in, profiles and push delivery. Live ICT Battle rooms run on a Neurobyte server.
-    </p>
-    <ul>
-      <li><strong>Google Play Services</strong> — Application distribution and security verification.</li>
-      <li><strong>Firebase Authentication</strong> — Secure token-based user sign-in.</li>
-      <li><strong>Cloud Firestore</strong> — Real-time multiplayer rooms and student profile storage.</li>
-      <li><strong>Firebase Cloud Messaging</strong> — Push notification alerts.</li>
-    </ul>
-    <p>All network traffic is encrypted over HTTPS / TLS.</p>
-
-    <h2>4. Account & Data Deletion (Google Play Compliance)</h2>
-    <p>
-      Under Google Play's User Data & Account Deletion Policy, users have full control to permanently delete their account and associated personal data:
-    </p>
-
-    <div class="deletion-box">
-      <h3 style="color: #991B1B; margin-top: 0;">How to Delete Your Account and Data:</h3>
-      <ol style="margin-bottom: 0;">
-        <li><strong>In-App Deletion:</strong> Open the HSC ICT+ app &rarr; Go to <em>Student Profile</em> &rarr; Tap <strong>"প্রোফাইল মুছে ফেলুন" (Delete Account)</strong> &rarr; Confirm. Confirm your Google account again. The app reports success after deleting your account and saved student profile.</li>
-        <li><strong>Web-Based Deletion Request:</strong> If you have uninstalled the app, visit our <a href="delete-account.html">Data Deletion Request Page</a> or send an email to <a href="mailto:support@neurobyteit.com">support@neurobyteit.com</a> with the subject <em>"HSC ICT+ Account Deletion"</em>. Your records will be deleted within 48 to 72 hours.</li>
-      </ol>
-    </div>
+    <h2>4. Retention and deletion</h2>
+    <p>We keep your account and saved profile until you delete the account or we process a verified deletion request. ICT Battle room data is held temporarily in server memory. Unused rooms expire after 15 minutes. Active rooms expire after the match deadline, with up to 15 extra minutes for results. Expired rooms are removed during server cleanup. Local notes, activity and preferences remain on the device until you remove them or clear the app's storage.</p>
+    <p>To delete your account, open <strong>Student Profile</strong>, select the account deletion option, and confirm your Google account. The app deletes the Firebase sign-in record, saved profile and photo, and any linked legacy Battle invitation registration. On the device where you delete the account, it also clears the saved profile cache and Battle history. General push notices are tied to the app installation and can still be managed in Android settings after account deletion.</p>
+    <p>Question reports are kept for reviewing and correcting questions. To request removal of personal information from a report or delete an account without the app, use the <a href="delete-account.html">Account Deletion page</a>. We verify account ownership before processing requests.</p>
 
     <h2>5. Children's Privacy</h2>
     <p>
